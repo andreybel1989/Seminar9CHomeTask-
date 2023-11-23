@@ -32,7 +32,7 @@ void EnterNumber(int[] array)
 string GetValues(int firstNumber, int secondNumber)
 {
     if (firstNumber == secondNumber) return firstNumber.ToString();
-    return (firstNumber + " " + GetValues(firstNumber + 1, secondNumber));
+    return (firstNumber + ", " + GetValues(firstNumber + 1, secondNumber));
 }
 
 void PrintValues()
