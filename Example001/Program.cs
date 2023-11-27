@@ -15,7 +15,7 @@ void EnterNumber(int[] array)
         Console.WriteLine("Enter the second number greater than the first");
         int secondNumber = Convert.ToInt32(Console.ReadLine());
 
-        if (secondNumber > firstNumber)
+        if (secondNumber >= firstNumber)
         {
             array[0] = firstNumber;
             array[1] = secondNumber;
@@ -37,7 +37,7 @@ string GetValues(int firstNumber, int secondNumber)
 
 void PrintValues()
 {
-    Console.WriteLine(GetValues(arrayNumbers[0], arrayNumbers[1]));
+    Console.WriteLine($"All natural numbers in the interval from {arrayNumbers[0]} : {arrayNumbers[1]} => {GetValues(arrayNumbers[0], arrayNumbers[1])}");
 }
 
 void Main()
